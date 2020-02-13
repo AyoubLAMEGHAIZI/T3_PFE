@@ -11,8 +11,7 @@ import { StationDetailComponent } from './station-detail/station-detail.componen
 import { FormsModule } from '@angular/forms';
 import { CommerceComponent } from './commerce/commerce.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import{MatSliderModule} from '@angular/material/slider';
-import {MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule} from '@angular/material'
+import {MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule,MatSliderModule} from '@angular/material'
 
 const appRoutes: Routes = [
   {
