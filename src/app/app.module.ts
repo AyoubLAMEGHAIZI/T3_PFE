@@ -1,16 +1,49 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 
+import { Routes, RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { Component,NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { StationDetailComponent } from './station-detail/station-detail.component';
+import { FormsModule } from '@angular/forms';
+import { CommerceComponent } from './commerce/commerce.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MatSliderModule} from '@angular/material/slider';
+import {MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule} from '@angular/material'
+
+const appRoutes: Routes = [
+  {
+    path: 'station-details',
+    component: StationDetailComponent,
+    data: { title: 'Station Details' }
+  },
+  {
+    path: 'commerces',
+    component: CommerceComponent,
+    data: { title: 'Commerce List' }
+  }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StationDetailComponent,
+    CommerceComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule,
+    MatIconModule,
+    MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
