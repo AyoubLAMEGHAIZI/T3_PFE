@@ -38,9 +38,8 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatIconModule,
-    MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule
+    //import angular material
+    MatSliderModule,MatIconModule,MatButtonModule, MatNativeDateModule, MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule
   ],
   providers: [  ],
   bootstrap: [AppComponent],
